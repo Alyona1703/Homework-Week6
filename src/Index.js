@@ -6,8 +6,6 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
 
-  console.log(response.data);
-
   windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`;
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
