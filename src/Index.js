@@ -8,9 +8,8 @@ function displayTemperature(response) {
 
   let iconElement = document.querySelector("#icon");
 
-  iconElement.innerHTML = `<img;
-  src =
-    "${response.data.condition.icon_url}"/>`;
+  iconElement.innerHTML = `<img 
+ src = "${response.data.condition.icon_url}"/>`;
 
   windSpeedElement.innerHTML = `${response.data.wind.speed} km/h`;
   cityElement.innerHTML = response.data.city;
